@@ -1,5 +1,7 @@
 package com.example.kotlinbasics
 
+
+
 fun main(){
 //    var myAge : Long = 23412341
 //    println(myAge)
@@ -90,10 +92,29 @@ fun main(){
 //    val myResult = divide(num1Double, num2Double)
 //    println("The result is $myResult")
 
-     
+//        // Creating an object/instance of the calss Dog
+//        var daisy = Dog("Daisy", "Dwarf poodle", 1)
+//
+//    println("${daisy.name} is a ${daisy.breed} and is ${daisy.age} years old")
+//    println("A year has passed!")
+////    daisy.name = "Hello world"
+//    daisy.age = 2
+//    println("${daisy.name} is a ${daisy.breed} and is ${daisy.age} years old")
+
+//    val coffeForDenis = CoffeeDetails(0, "denis", "xxl", 0)
+//    makeCoffee(coffeForDenis)
+
+
 
 }
 
+/*
+data class CoffeeDetails(
+    val sugarCount: Int,
+    val name: String,
+    val size:String,
+    val creamAmount: Int
+)
 
 
 
@@ -107,7 +128,7 @@ fun add(num1:Int,num2:Int):Int{
     return result
 }
 
-fun askCoffeeDetails():Int{
+fun askCoffeeDetails(){
     println("Who is this coffee for?")
     val name = readln()
     println("How many pieces of sugar do you want?")
@@ -115,20 +136,21 @@ fun askCoffeeDetails():Int{
     val sugarCountInt = sugarCount.toInt()
 
     // Call Function
-    makeCoffee(sugarCountInt, name)
+//    makeCoffee(sugarCountInt, name)
 //    makeCoffee(2, "Jimmy")
 //    makeCoffee(0, "Denis")
 //    makeCoffee(3, "Candice")
 }
 
 // Define Function
-fun makeCoffee(sugarCount:Int, name:String){
-    if(sugarCount == 1){
-        println("Coffee with $sugarCount spoons of sugar for $name")
-    }else if(sugarCount == 0){
-        println("Coffee with $sugarCount spoons of sugar $name")
+fun makeCoffee(coffeeDetails: CoffeeDetails){
+    if(coffeeDetails.sugarCount == 1){
+        println("Coffee with ${coffeeDetails.sugarCount}" +
+                " spoons of sugar for $${coffeeDetails.name} + and cream:" +"${coffeeDetails.creamAmount}" )
+    }else if(coffeeDetails.sugarCount == 0){
+        println("Coffee with ${coffeeDetails.sugarCount} spoons of sugar ${coffeeDetails.name} + and cream:\" +\"${coffeeDetails.creamAmount}\"")
     } else{
-        println("Coffee with $sugarCount spoons of sugar $name")
+        println("Coffee with ${coffeeDetails.sugarCount} spoons of sugar ${coffeeDetails.name} + and cream:\" +\"${coffeeDetails.creamAmount}\"")
     }
 
 //    println("Buy beans")
@@ -136,4 +158,4 @@ fun makeCoffee(sugarCount:Int, name:String){
 //    println("Heat water to 90degree")
 //    println("Add water")
 //    println("Push hot water through the grinded beans")
-}
+}*/
