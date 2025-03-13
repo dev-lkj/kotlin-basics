@@ -104,6 +104,56 @@ fun main(){
 //    val coffeForDenis = CoffeeDetails(0, "denis", "xxl", 0)
 //    makeCoffee(coffeForDenis)
 
+    // Immutable list - you cannot add items after the initilization
+//    val shoppingList = listOf("Processor", "RAM", "Graphics Card", "SSD")
+//    shoppingList.add()
+    // mutable list - you can add items later and modify
+//    val shoppingList = mutableListOf("Processor", "RAM", "Graphics Card RTX 3060", "SSD")
+//
+//    // adding items to lists
+//    shoppingList.add("Cooling System")
+//    shoppingList.remove("Graphics Card RTX 3060")
+//    shoppingList.add("Graphics Card RTX 4090")
+//
+//    println(shoppingList)
+//    shoppingList.removeAt(2)
+//    println(shoppingList)
+//    shoppingList.removeAt(1)
+//    println(shoppingList)
+//    shoppingList.add(2, "RAM")
+//    println(shoppingList)
+//    println(shoppingList[3])
+//
+//    shoppingList[3] = "Graphics Card Rx 7800XT"
+//    println(shoppingList) //[0][1][2][3][4]
+//    shoppingList.set(1, "Water Cooling")
+//    println(shoppingList)
+//
+//    val hasRam = shoppingList.contains("RAM")
+//    if (hasRam) {
+//        println("has RAM in the list")
+//    }else {
+//        println("No Ram in the list")
+//    }
+//
+//    println(shoppingList.size)
+////    for (index in 0 .. 3) {
+////
+////    }
+//
+//    for (index in 0 until shoppingList.size) {
+//        println("item ${shoppingList[index]} is at index $index")
+////        if (item == "RAM") {
+////            shoppingList.removeLast()
+////            break
+////        }
+//    }
+//
+//    println(shoppingList)
+
+
+
+
 
 
 }
