@@ -1,4 +1,8 @@
 package com.example.kotlinbasics
 
-class Tertiary {
+
+class Tertiary : BaseClass() {
+    override fun role() {
+        println("Bard of the House of BaseClass")
+    }
 }

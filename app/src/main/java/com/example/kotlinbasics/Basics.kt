@@ -158,6 +158,8 @@ fun main(){
 
 }
 
+data class Portion()
+
 /*
 data class CoffeeDetails(
     val sugarCount: Int,
